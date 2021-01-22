@@ -2,12 +2,20 @@
 Приложение для отправки показаний по счетчикам каждый месяц в Управляющую компанию
 
 Используемые библиотеки:
-1) EntityFramework6
-2) Microsoft.Ofifce.Interop.Word
-3) CsvHelper
-4) Oxyplot.WindowsForms
+
+1) Работа с БД через ORM                    - EntityFramework6
+2) Сохранение в Word                        - Microsoft.Ofifce.Interop.Word
+3) Дублирование показаний в табличный файл  - CsvHelper
+4) Графики                                  - Oxyplot.WindowsForms
+5) Отправка почты                           - System.Net.Mail
 
 Технологии:
+Фронтенд - WindowsForms
+БД - MS SQL Server и PostgreSQL
+Unit тесты - Nunit Framework
+Условная сборка - для отделения хранения данных в Debug и Release версиях, удобства сборок и тестирования
+
+ OxyPlot
 
 Версия 1.0 включает:
 1) Хранение данных авторизации в приложении, данных от почтовых ящиков, и другой пользовательской информации в БД MS SQL и PostgreSQL
