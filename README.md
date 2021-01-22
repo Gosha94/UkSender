@@ -18,8 +18,6 @@
 6) Автоматическое формирование шаблона вводимых показаний и автоотправка в Управляющую компанию посредством почтового клиента
 7) Ограничение периодов отправки показаний в кол-ве одного раза в месяц
 
-
-
 Future Changes:
 1) Полный рефакторинг классов
 2) Unit - тесты
@@ -27,3 +25,19 @@ Future Changes:
 4) Разбить приложение на слои (Бизнес логика, Доступ к данным, Представление)
 5) Разбить графики по годам, 
 6) Изменить хранение шаблонов показаний в формате (mYYYY)
+
+Screenshots:
+
+1) Авторизация
+
+![Img alt](https://github.com/Gosha94/UkSender/raw/master/UkSender/ScreenSaves/Authorization.png)
+
+![Img alt](https://github.com/Gosha94/UkSender/raw/master/UkSender/ScreenSaves/Error.png)
+
+2) Главное меню
+
+![Img alt](https://github.com/Gosha94/UkSender/raw/master/UkSender/ScreenSaves/MainMenu.png)
+
+3) Графики
+
+![Img alt](https://github.com/Gosha94/UkSender/raw/master/UkSender/ScreenSaves/Graphics.png)
