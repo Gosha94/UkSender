@@ -194,6 +194,10 @@
     <Content Include="Icons\MainIcon.ico" />
     <Content Include="Icons\User.png" />
     <Content Include="MainIcon.ico" />
+    <Content Include="ScreenSaves\Authorization.png" />
+    <Content Include="ScreenSaves\Error.png" />
+    <Content Include="ScreenSaves\Graphics.png" />
+    <Content Include="ScreenSaves\MainMenu.png" />
     <Content Include="Templates\AttachmentTemplate.dot">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
