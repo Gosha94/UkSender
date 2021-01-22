@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkSender", "UkSender\UkSender.csproj", "{2604CD5D-5780-44AF-86BB-C67D79FC74AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkSender.NUnitTests", "UkSender.NUnitTests\UkSender.NUnitTests.csproj", "{42D9461F-321A-4C4A-AB02-F2CFF075EEA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2604CD5D-5780-44AF-86BB-C67D79FC74AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2604CD5D-5780-44AF-86BB-C67D79FC74AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2604CD5D-5780-44AF-86BB-C67D79FC74AD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2604CD5D-5780-44AF-86BB-C67D79FC74AD}.Debug|x86.Build.0 = Debug|Any CPU
+		{2604CD5D-5780-44AF-86BB-C67D79FC74AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2604CD5D-5780-44AF-86BB-C67D79FC74AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2604CD5D-5780-44AF-86BB-C67D79FC74AD}.Release|x86.ActiveCfg = Release|Any CPU
+		{2604CD5D-5780-44AF-86BB-C67D79FC74AD}.Release|x86.Build.0 = Release|Any CPU
+		{42D9461F-321A-4C4A-AB02-F2CFF075EEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D9461F-321A-4C4A-AB02-F2CFF075EEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D9461F-321A-4C4A-AB02-F2CFF075EEA7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{42D9461F-321A-4C4A-AB02-F2CFF075EEA7}.Debug|x86.Build.0 = Debug|Any CPU
+		{42D9461F-321A-4C4A-AB02-F2CFF075EEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D9461F-321A-4C4A-AB02-F2CFF075EEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D9461F-321A-4C4A-AB02-F2CFF075EEA7}.Release|x86.ActiveCfg = Release|Any CPU
+		{42D9461F-321A-4C4A-AB02-F2CFF075EEA7}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B4DA517-8E56-48C0-A763-EC6F823EB6DF}
+	EndGlobalSection
+EndGlobal
