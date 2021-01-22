@@ -10,10 +10,10 @@
 5) Отправка почты                           - System.Net.Mail
 
 Технологии:
-Фронтенд - WindowsForms
-БД - MS SQL Server и PostgreSQL
-Unit тесты - Nunit Framework
-Условная сборка - для отделения хранения данных в Debug и Release версиях, удобства сборок и тестирования
+1) Фронтенд - WindowsForms
+2) БД - MS SQL Server и PostgreSQL
+3) Unit тесты - Nunit Framework
+4) Условная сборка - для отделения хранения данных в Debug и Release версиях, удобства сборок и тестирования
 
  OxyPlot
 
