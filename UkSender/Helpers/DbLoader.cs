@@ -5,15 +5,27 @@ using System.Data.Entity.Core;
 using System.Collections.Generic;
 using System;
 using System.Windows.Forms;
+using AesCryptoLib.DLL.Controller;
 
 namespace UkSender.Helpers
 {
     public class DbLoader
     {
-        public string _postgreConnectionString;
+        public string PostgreConnectionString;
+        // TODO Это костыль! Шифровка должна вестись в CredentialLoader!
+        private CryptoManager _cryptoManager;
+
         public DbLoader()
         {
-            this._postgreConnectionString = CredentialLoader.GetConnStringFromDb("Postgres");
+            this._cryptoManager = new CryptoManager();
+            GetConnStringFromDb("Postgres");            
+        }
+
+
+        private void GetConnStringFromDb(string connName)
+        {
+            var connectData = GetConnectStringFromDb(connName);
+            this.PostgreConnectionString = this._cryptoManager.Decrypt(connectData.ConnectionString);
         }
 
         public static ConnectionStringModel GetConnectStringFromDb(string connectName)
@@ -37,7 +49,7 @@ namespace UkSender.Helpers
         {
             try
             {
-                using (PostgreContext selUserCont = new PostgreContext(this._postgreConnectionString))
+                using (PostgreContext selUserCont = new PostgreContext(this.PostgreConnectionString))
                 {
                     var result = selUserCont.UsersAuthorizeData.ToList();                        
                     
@@ -68,7 +80,7 @@ namespace UkSender.Helpers
         {
             try
             {
-                using (PostgreContext psgDbCon = new PostgreContext(this._postgreConnectionString) )
+                using (PostgreContext psgDbCon = new PostgreContext(this.PostgreConnectionString) )
                 {
                     var emailData = psgDbCon.EmailData.First();
                     LogWriter.LogWrite(" Данные для отправки email получены из БД.", "log.txt");
