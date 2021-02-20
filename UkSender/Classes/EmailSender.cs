@@ -39,7 +39,7 @@ namespace UkSender.Classes
 
         public EmailSender( string pathToCatalog, int month )
         {
-
+            this._credentialLoader = new CredentialLoader();
             // Выделяем память для объектов
             _emailSendData = this._credentialLoader.GetEmailCredentialsFromDb();            
             // Получаем из конструктора путь к каталогу
